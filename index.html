@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symphoboard — афиша классических концертов Москвы</title>
+<meta name="description" content="Афиша симфонических и классических концертов Москвы. Telegram-канал и инструкция, как слушать музыку.">
+<link rel="canonical" href="https://shymphoboard.ru/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shymphoboard.ru/">
+<meta property="og:title" content="Symphoboard">
+<meta property="og:description" content="Афиша классических концертов Москвы. Скоро — инструкция, как слушать музыку.">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎻</text></svg>">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7;
+    --fg: #1c1a17;
+    --muted: #6f6960;
+    --rule: #e3ded4;
+    --accent: #8a5a2b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121110;
+      --fg: #ece8e1;
+      --muted: #928b81;
+      --rule: #2c2a26;
+      --accent: #d3a06a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 17px/1.6 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.5rem;
+  }
+
+  main {
+    width: 100%;
+    max-width: 34rem;
+  }
+
+  .mark {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 0 1.75rem;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 7vw, 3.1rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin: 0 0 1rem;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin: 0 0 2.5rem;
+    text-wrap: pretty;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 2.5rem;
+  }
+
+  .soon {
+    font: 500 0.78rem/1 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.75rem;
+  }
+
+  .soon-body {
+    margin: 0 0 2.5rem;
+    text-wrap: pretty;
+  }
+
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+    font: 400 1rem/1.4 ui-sans-serif, system-ui, sans-serif;
+  }
+
+  a {
+    color: var(--fg);
+    text-decoration-color: var(--rule);
+    text-underline-offset: 0.25em;
+    transition: color 0.15s, text-decoration-color 0.15s;
+  }
+  a:hover, a:focus-visible {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    font: 400 0.85rem/1.5 ui-sans-serif, system-ui, sans-serif;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="mark" aria-hidden="true">🎻</p>
+
+  <h1>Symphoboard</h1>
+  <p class="lede">Афиша классических и симфонических концертов Москвы — собирается автоматически и приходит карточками в Telegram.</p>
+
+  <hr>
+
+  <p class="soon">Скоро здесь</p>
+  <p class="soon-body">Инструкция «как слушать музыку»: с чего начать, куда идти, что читать перед концертом и как не запутаться в программках.</p>
+
+  <ul class="links">
+    <li><a href="https://t.me/symphoboard">Канал в Telegram →</a></li>
+  </ul>
+
+  <footer>
+    Личный некоммерческий проект. Фёдор Холькин.
+  </footer>
+</main>
+</body>
+</html>
