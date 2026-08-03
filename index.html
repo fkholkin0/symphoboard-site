@@ -90,7 +90,23 @@
 
   .soon-body {
     margin: 0 0 2.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
     text-wrap: pretty;
+  }
+
+  .guides {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+  }
+  .guides li { margin-bottom: 1rem; }
+  .guides a { display: block; }
+  .guides span {
+    display: block;
+    font: 400 0.9rem/1.4 ui-sans-serif, system-ui, sans-serif;
+    color: var(--muted);
+    margin-top: 0.15rem;
   }
 
   .links {
@@ -130,11 +146,16 @@
 
   <hr>
 
-  <p class="soon">Скоро здесь</p>
-  <p class="soon-body">Инструкция «как слушать музыку»: с чего начать, куда идти, что читать перед концертом и как не запутаться в программках.</p>
+  <p class="soon">Как слушать</p>
+  <ul class="guides">
+    <li><a href="/guide/tchaikovsky-symphony-2/">Чайковский — Симфония №2 «Малороссийская»</a><span>народные темы в симфоническом образе</span></li>
+    <li><a href="/guide/tchaikovsky-symphony-4/">Чайковский — Симфония №4</a><span>человек берётся с судьбой и проигрывает</span></li>
+  </ul>
+
+  <p class="soon-body">Сад растёт медленно и не по плану — по одному произведению, когда есть что сказать.</p>
 
   <ul class="links">
-    <li><a href="https://t.me/symphoboard">Канал в Telegram →</a></li>
+    <li><a href="https://t.me/symphoboard">Афиша концертов в Telegram →</a></li>
   </ul>
 
   <footer>
